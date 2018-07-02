@@ -3,13 +3,13 @@
 ガンマの値をトラックバーで受け取り、ガンマ変換する。
 ルックアップテーブルを使い、それぞれの輝度値について、トラックバーから受け取ったガンマ値を適応させる。
 
-    look_up_table = np.ones((256, 1), dtype = 'uint8' ) *　0
-    for i in range(256):
-        look_up_table[i][0] = 255 * pow(float(i) / 255, 1.0 / gamma)
+        look_up_table = np.ones((256, 1), dtype = 'uint8' ) *　0
+        for i in range(256):
+            look_up_table[i][0] = 255 * pow(float(i) / 255, 1.0 / gamma)
         
 ガンマの値がゼロになるのを防ぐために、トラックバーから受け取った値に0.0001をプラスする。
   
-      gamma=v
+    gamma=v
     gamma+=0.0001
    
 
