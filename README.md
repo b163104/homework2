@@ -24,6 +24,32 @@
    
 - カラーチェンジの説明
 
+トラックバーを生成する
+
+        cv2.createTrackbar('R', 'img', 0, 255, changeColor)
+        cv2.createTrackbar('G', 'img', 0, 255, changeColor)
+        cv2.createTrackbar('B', 'img', 0, 255, changeColor)
+        
+トラックバーの値を持ってくる
+        
+        R=cv2.getTrackbarPos('R','img')
+        G=cv2.getTrackbarPos('G','img')
+        B=cv2.getTrackbarPos('B','img')
+        
+RGBそれぞれの値を変更する。
+
+        if(B!=0):
+                frame[:,:,0]=B
+         elif(G!=0):
+                frame[:,:,1]=G
+         elif(R!=0):
+                 frame[:,:,2]=R
+
+実際のトラックバーの値を表示させるために以下のコードを実装した。
+
+                   cv2.putText(frame, "red:"+str(R),(20,40),cv2.FONT_HERSHEY_COMPLEX,0.8,(255,255,255),2)
+                   cv2.putText(frame, "green:"+str(G),(20,70),cv2.FONT_HERSHEY_COMPLEX,0.8,(255,255,255),2)
+                   cv2.putText(frame, "blue:"+str(B),(20,100),cv2.FONT_HERSHEY_COMPLEX,0.8,(255,255,255),2)
 
 ## 動画へのリンク
 
