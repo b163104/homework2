@@ -1,5 +1,6 @@
 # homework2
 - ガンマ変換の説明
+
 ガンマの値をトラックバーで受け取り、ガンマ変換する。
 ルックアップテーブルを使い、それぞれの輝度値について、トラックバーから受け取ったガンマ値を適応させる。
 
@@ -14,6 +15,7 @@
    
 
 - ガウシアンフィルタの説明
+
 分散をトラックバーで受け取り、画像にガウシアンフィルタを適用する
 分散を受け取り、フィルターでたたみこむ
 今回は、17*17のガウシアンフィルタを適応した
@@ -24,6 +26,7 @@
 
 
 ##　動画へのリンク
+
 https://www.youtube.com/watch?v=FAzn_79jFr4
 //ガンマ変換
 
@@ -32,6 +35,7 @@ https://www.youtube.com/watch?v=jQApGRScn0c
 
 https://www.youtube.com/watch?v=Jt-CGPxWVUo
 //カラーチェンジ
+
 
 ##　参考文献
 https://www.blog.umentu.work/python-opencv3%E3%81%A7%E3%82%AC%E3%83%B3%E3%83%9E%E5%A4%89%E6%8F%9Bgamma-conversion-2/
